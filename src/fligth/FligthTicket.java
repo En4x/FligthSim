@@ -1,3 +1,4 @@
+package fligth;
 
 public class FligthTicket {
 	String departure;

@@ -1,3 +1,4 @@
+package fligth;
 
 public class Itinerary {
 	Fligth[] fligths = {
@@ -13,14 +14,18 @@ public class Itinerary {
 		return price;
 	}
 	
-	void listFligths() {
+	public void listFligths() {
 		for (Fligth f : fligths) {
 			System.out.println(f.toString() + " price: " +getTicketPrice(f) );
 		}
 	}
 	
-	void selectFligth(int in) {
+	public void selectFligth(int in) {
 		System.out.println(fligths[in-1].toString() + " price: " + getTicketPrice(fligths[in-1]));
+	}
+	
+	public int getPrice(int in){
+		return Integer.parseInt(getTicketPrice(fligths[in-1]));
 	}
 	
 }
